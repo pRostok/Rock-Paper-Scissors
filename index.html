@@ -10,28 +10,32 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div class="wrap">
+    <div class="wrap" id="blur">
         <header>
-            <h1>ROCK PAPER SCISSORS</h1>
+            <h1><span id="w1">ROCK </span><span id="w2">PAPER </span><span id="w3">SCISSORS </span></h1>
         </header>
         <div class="score">
             <div class="score_cards">
                 <div class="card">
-                    <p>PLAYER: 0</p>
+                    <p>PLAYER:<strong id="player-score">0</strong></p>
                     <i id="player-choice"></i>
                 </div>
                 <div class="card">
-                    <p>COMPUTER: 0</p>
+                    <p>COMPUTER:<strong id="computer-score">0</strong></p>
                     <i id="computer-choice"></i>
                 </div>
             </div>
             <p id="round-result"></p>
         </div>
-        <div class="coice">
-            <i class="fa-regular fa-hand-back-fist"></i>
-            <i class="fa-regular fa-hand"></i>
-            <i class="fa-regular fa-hand-scissors"></i>
+        <div class="choice">
+            <i class="fa-regular fa-hand-back-fist" id="rock-button"></i>
+            <i class="fa-regular fa-hand" id="paper-button"></i>
+            <i class="fa-regular fa-hand-scissors" id="scissors-button"></i>
         </div>
+    </div>
+    <div class="popup">
+        <h1 id="game-result"></h1>
+        <a href="#" onclick="popup()" id="restart-button">RESTART</a>
     </div>
 
     <script src="script.js"></script>
